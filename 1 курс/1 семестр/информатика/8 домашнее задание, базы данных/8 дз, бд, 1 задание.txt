@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>68</Id>
+<Query>
+SELECT SUM(purch_amt)
+FROM orders
+</Query>
+</SqlQuery>

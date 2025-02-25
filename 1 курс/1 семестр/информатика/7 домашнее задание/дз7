@@ -1,0 +1,106 @@
+CREATE TABLE Организация(
+    Кодорганизации INTEGER PRIMARY KEY,
+    Имя TEXT,
+    Рассчётныйсчёт TEXT,
+    Адрес TEXT, 
+    Элпочта TEXT,
+    Номертелефона TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Сотрудник(
+    Кодсотруника INTEGER PRIMARY KEY,
+    ФИО TEXT,
+    Образование TEXT,
+    Адрес TEXT, 
+    Телефон TEXT,
+    Эладрес TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Методдоставки(
+    Кодметода INTEGER PRIMARY KEY,
+    Наименование TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Поставщик(
+    Кодпоставщика INTEGER PRIMARY KEY,
+    Наименование TEXT,
+    Рассчётныйсчёт TEXT,
+    Адрес TEXT, 
+    Номертелефона TEXT,
+    Элпочта TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Тип(
+    Кодтипа INTEGER PRIMARY KEY,
+    Наименование TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Единицаизмерения(
+    Кодединицы INTEGER PRIMARY KEY,
+    Наименование TEXT
+    );
+    
+CREATE TABLE Клиент(
+    Кодклиента INTEGER PRIMARY KEY,
+    ФИО TEXT,
+    Адрес TEXT, 
+    Телефон TEXT,
+    Эладрес TEXT,
+    Примечание TEXT
+    );
+    
+CREATE TABLE Товар(
+    Кодтовара INTEGER PRIMARY KEY,
+    Наименование TEXT,
+    Кодпоставщика INTEGER,
+    Кодтипа INTEGER,
+    Кодединицы INTEGER,
+    Цена REAL, 
+    Статус TEXT,
+    FOREIGN KEY (Кодпоставщика)
+        REFERENCES Поставщик(Кодпоставщика)
+    FOREIGN KEY (Кодтипа)
+        REFERENCES Тип(Кодтипа)
+    FOREIGN KEY (Кодединицы)
+        REFERENCES Единицаизмерения(Кодединицы)
+    
+    );
+    
+CREATE TABLE Заказ(
+    Кодзаказа INTEGER PRIMARY KEY,
+    Кодорганизации INTEGER,
+    Кодтовара INTEGER,
+    Кодсотрудника INTEGER,
+    Кодклиента INTEGER,
+    Кодметода INTEGER, 
+    Дата TEXT,
+    Цена REAL,
+    Скидка REAL,
+    Ценадоставки REAL,
+    FOREIGN KEY (Кодорганизации)
+        REFERENCES Организация(Кодорганизации)
+    FOREIGN KEY (Кодтовара)
+        REFERENCES Товар(Кодтовара)
+    FOREIGN KEY (Кодсотрудника)
+        REFERENCES Сотрудник(Кодсотрудника)
+    FOREIGN KEY (Кодклиента)
+        REFERENCES Клиент(Кодклиента)
+    FOREIGN KEY (Кодметода)
+        REFERENCES Методдоставки(Кодметода)
+    
+    );
+    
+    
+    
+    
+
+    
+
+
+    
+

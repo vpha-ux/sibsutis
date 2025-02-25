@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>593</Id>
+<Query>
+SELECT *
+FROM employees
+WHERE hire_date IN ('1991-5-01', '1991-12-03', '1990-01-19')
+ORDER BY hire_date ASC;
+</Query>
+</SqlQuery>

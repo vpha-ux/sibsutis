@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>401</Id>
+<Query>
+SELECT COUNT(*)
+FROM goal_details
+WHERE goal_half 
+</Query>
+</SqlQuery>

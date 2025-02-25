@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>62</Id>
+<Query>
+SELECT col1 
+FROM testtable 
+WHERE col1 NOT LIKE '%\_/%' ESCAPE '\';
+</Query>
+</SqlQuery>

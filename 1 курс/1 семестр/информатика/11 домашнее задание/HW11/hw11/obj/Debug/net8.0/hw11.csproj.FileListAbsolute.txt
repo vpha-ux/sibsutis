@@ -1,0 +1,14 @@
+C:\Users\Валерия\Desktop\HW11\hw11\bin\Debug\net8.0\hw11.exe
+C:\Users\Валерия\Desktop\HW11\hw11\bin\Debug\net8.0\hw11.deps.json
+C:\Users\Валерия\Desktop\HW11\hw11\bin\Debug\net8.0\hw11.runtimeconfig.json
+C:\Users\Валерия\Desktop\HW11\hw11\bin\Debug\net8.0\hw11.dll
+C:\Users\Валерия\Desktop\HW11\hw11\bin\Debug\net8.0\hw11.pdb
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.AssemblyInfoInputs.cache
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.AssemblyInfo.cs
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.csproj.CoreCompileInputs.cache
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.dll
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\refint\hw11.dll
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.pdb
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\hw11.genruntimeconfig.cache
+C:\Users\Валерия\Desktop\HW11\hw11\obj\Debug\net8.0\ref\hw11.dll

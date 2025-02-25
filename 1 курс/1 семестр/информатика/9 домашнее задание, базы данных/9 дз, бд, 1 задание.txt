@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>266</Id>
+<Query>
+SELECT *
+FROM employees
+WHERE salary =
+(SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1)
+</Query>
+</SqlQuery>

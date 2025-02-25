@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SqlQuery>
+<Id>613</Id>
+<Query>
+SELECT job_name, SUM(salary * 12) AS sum
+FROM employees
+WHERE hire_date LIKE '1991%' or commission != 0 and employees.salary - employees.commission
+GROUP BY job_name;
+</Query>
+</SqlQuery>
